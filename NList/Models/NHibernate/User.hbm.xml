@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="NList" namespace="NList.Models" auto-import="true">
+
+  <class name="NList.Models.User, NList" table="users">
+
+    <id name="u_id" access="property" column="user_id" type="Int32">
+
+      <generator class="native"></generator>
+
+    </id>
+
+    <property name="uname" access="property" column="username" type="String"></property>
+    <property name="mail" access="property" column="email" type="String"></property>
+    <property name="pass" access="property" column="password" type="String"></property>
+ 
+
+  </class>
+
+</hibernate-mapping>
